@@ -107,4 +107,4 @@ with(stepsByDay[stepsByDay$day == "weekday",], lines(steps ~ interval, type="l",
 with(stepsByDay[stepsByDay$day == "weekend",], lines(steps ~ interval, type="l", col="green" ))  
 legend("topright", lty=c(1,1), col = c("red", "green"), legend = c("weekday", "weekend"), seg.len=3)
 
-# The walking person likes mostly activ on the weekends.
+# The walking person likes mostly activ on the weekends.Only on weekdays the activity starts earlier.
